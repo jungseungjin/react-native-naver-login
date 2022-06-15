@@ -127,7 +127,7 @@ public class RNNaverLoginModule extends ReactContextBaseJavaModule {
               this.onFailure(i, s);
             }
           };
-
+          naverIdLoginSDK.logout();
           naverIdLoginSDK.authenticate(reactContext, oAuthLoginCallback);
         }
       });
